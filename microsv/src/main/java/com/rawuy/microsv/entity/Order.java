@@ -1,14 +1,12 @@
 package com.rawuy.microsv.entity;
 
-
 import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
@@ -23,7 +21,7 @@ public class Order {
     private double totalPrice;
 
     private String receiverName;
-    
+
     private String receiverAddress;
 
     private String receiverPhone;
@@ -62,12 +60,6 @@ public class Order {
 
     private String status;
 
-    // userID
-    // Order many -> to one -> user
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
     // order_detail
     // order one -> many -> order_detail
     @OneToMany(mappedBy = "order")
@@ -75,14 +67,6 @@ public class Order {
 
     public long getId() {
         return id;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public List<OrderDetail> getOrder_Details() {

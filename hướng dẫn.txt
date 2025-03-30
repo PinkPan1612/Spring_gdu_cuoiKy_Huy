@@ -1,0 +1,4 @@
+chương trình sử dụng hibernate ORM để kết nối và tạo bảng cơ sở dữ liệu tự động bằng mã nguồn
+- chạy chương trình (sau khi kết nối đúng tên mật khẩu ở properties đúng với mysql), vào sql chạy lệnh ở tệp sql để insert tài khoản đăng nhập
+
+tk: admin mk: 123456 (mk trong mysql đã được hashcode)

@@ -1,6 +1,5 @@
 package com.rawuy.microsv.entity;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,11 +20,6 @@ public class OrderDetail {
     @ManyToOne
     @JoinColumn(name = "order_id")
     private Order order;
-
-    // product_id: long
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
 
     public long getId() {
         return id;
@@ -57,14 +51,6 @@ public class OrderDetail {
 
     public void setOrder(Order order) {
         this.order = order;
-    }
-
-    public Product getProduct() {
-        return product;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
     }
 
 }
