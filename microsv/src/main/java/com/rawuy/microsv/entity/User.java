@@ -2,7 +2,6 @@ package com.rawuy.microsv.entity;
 
 import java.util.List;
 
-import com.rawuy.microsv.service.StrongPassword;
 
 //javax
 import jakarta.persistence.Entity;
@@ -30,7 +29,7 @@ public class User {
     private String email;
 
     @NotNull(message = "Mật khẩu không được để trống")
-    @StrongPassword(message = "Mật khẩu không đủ mạnh. Vui lòng nhập ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt.")
+   
     private String password;
 
     @NotNull(message = "Tên đầy đủ không được để trống")

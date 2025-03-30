@@ -7,9 +7,6 @@ import org.springframework.stereotype.Service;
 import com.rawuy.microsv.entity.User;
 import com.rawuy.microsv.repository.UserRepository;
 
-
-
-
 @Service
 public class UserService {
     private final UserRepository userRepository;

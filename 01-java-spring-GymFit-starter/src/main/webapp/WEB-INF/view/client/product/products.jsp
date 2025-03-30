@@ -146,7 +146,7 @@
 
                         <div class="card product-card">
                           <div class="product-image">
-                            <img src="/client/img/${product.image}" alt="${product.name}" class="card-img-top">
+                            <img src="/images/product/${product.image}" alt="${product.name}" class="card-img-top">
                           </div>
                           <div class="card-body">
                             <h5 class="card-title">${product.name}</h5>
